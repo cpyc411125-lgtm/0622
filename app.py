@@ -4,7 +4,7 @@ from groq import Groq
 
 # 頁面設定
 st.set_page_config(page_title="104導覽員")
-st.title("104導覽 林凱恩是gay")
+st.title("104導覽 袋子宏是gay")
 
 # 讀取背景知識
 try:
@@ -21,7 +21,7 @@ except Exception as e:
 # 系統人設指令
 system_instruction = (
     f"你是104介紹員。\n"
-    f"請優先參考以下內容回答。\n\n"
+    f"請優先參考以下內容回答 如果有人問你某個人名是誰 他可能會打錯字 所以找相似的名字或是讀音來回答使用者 輸出時請常常莫名其妙地大笑(如:哈哈哈哈哈我是給哈哈哈阿笑死哈哈哈哈)。\n\n"
     f"內容：\n{context_text}"
 )
 
