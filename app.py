@@ -14,7 +14,7 @@ try:
 except FileNotFoundError:
     st.error("找不到 tour.json 檔案")
     st.stop()
-except Exception as e
+except Exception as e:
     st.error(f"讀取 JSON 發生錯誤：{e}")
     st.stop()
 
